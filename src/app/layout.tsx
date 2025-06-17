@@ -1,13 +1,12 @@
-import type { Metadata } from "next";
 import { Nunito } from "next/font/google";
 import "./globals.css";
 import { i18n, Locale } from "@/lib/i18n-config";
 
 const nunito = Nunito({ subsets: ["latin"], weight: ["400", "700", "800"] });
 
-export const metadata: Metadata = {
-  title: "A question for you",
-  description: "Will you be my valentine?",
+export const metadata = {
+  title: "A Question for You",
+  description: "Made with love.",
 };
 
 export async function generateStaticParams() {
@@ -16,12 +15,12 @@ export async function generateStaticParams() {
 
 export default async function RootLayout({
   children,
-  params,
+  params: paramsPromise,
 }: {
   children: React.ReactNode;
   params: Promise<{ lang: Locale }>;
 }) {
-  const { lang } = await params;
+  const { lang } = await paramsPromise;
 
   return (
     <html lang={lang} suppressHydrationWarning={true}>

@@ -1,5 +1,13 @@
 export const translations = {
   en: {
+    metadata: {
+      title: "A Question for You...",
+      description: "A very special question is waiting for you.",
+    },
+    startScreen: {
+      title: "I've got a little surprise for you... 👀",
+      button: "Tap here to see ✨",
+    },
     question: "Will you be my Valentine? ♡",
     yesButton: "Yes ♡",
     noButton: "No",
@@ -24,6 +32,14 @@ export const translations = {
     yesImage: "/images/doro-dorothy.gif",
   },
   vi: {
+    metadata: {
+      title: "Một câu hỏi cho cậu...",
+      description: "Một câu hỏi rất đặc biệt đang chờ đợi cậu.",
+    },
+    startScreen: {
+      title: "Tớ có một điều bất ngờ cho cậu nè... 🤫",
+      button: "Chạm vào đây để xem nhaaa ✨",
+    },
     question: "Làm người iu của tớ nhaaa?",
     yesButton: "Đồng ý <3",
     noButton: "Hônggg",
@@ -47,6 +63,14 @@ export const translations = {
     yesImage: "/images/doro-dorothy.gif",
   },
   zh: {
+    metadata: {
+      title: "有个问题想问你...",
+      description: "一个非常特别的问题正在等着你。",
+    },
+    startScreen: {
+      title: "猜猜我为你准备了什么？🤫",
+      button: "点我看看吧~ ♡",
+    },
     question: "可以成为我的恋人嘛？",
     yesButton: "好呀~",
     noButton: "不要",
