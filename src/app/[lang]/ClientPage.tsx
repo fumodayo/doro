@@ -36,6 +36,7 @@ export default function MainPage({ lang }: MainPageProps) {
     return () => {
       audio.pause();
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {

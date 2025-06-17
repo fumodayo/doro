@@ -1,8 +1,12 @@
 import { Locale } from "@/lib/i18n-config";
 import ClientPage from "./ClientPage";
 
-export default function Page({ params }: { params: { lang: Locale } }) {
-  const { lang } = params;
+export default async function Page({
+  params,
+}: {
+  params: Promise<{ lang: Locale }>;
+}) {
+  const { lang } = await params;
 
   return <ClientPage lang={lang} />;
 }
